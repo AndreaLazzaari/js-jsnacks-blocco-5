@@ -38,8 +38,11 @@ const listaPersone = [
    }
 ];
 
-const nuovaListaNomi = listaPersone.map (numero) => {
-   
-}
+const nuovaListaNomi = listaPersone.map ((persona) => {
+   persona.nomeCompleto = persona.nome + '' + persona.cognome
+   persona.maggiorenne = persona.eta <= 18
+   return persona
+
+})
 
 console.log(nuovaListaNomi)
