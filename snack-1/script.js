@@ -69,10 +69,26 @@ const macchine = [
 
 ];
 
-const macchineBenzina = macchine.filter ((alimentazione) => {
-    if(macchine.alimentazione === 'benzina'){
+const macchineBenzina = macchine.filter ((macchina) => {
+    if(macchina.alimentazione == 'benzina'){
         return true
     }
 })
 
 console.log(macchineBenzina)
+
+const macchineDiesel = macchine.filter ((macchina) => {
+    if(macchina.alimentazione == 'diesel'){
+        return true
+    }
+})
+
+console.log(macchineDiesel)
+
+const altreMacchine =  macchine.filter ((macchina) => {
+    if(macchina.alimentazione != 'diesel' && macchina.alimentazione != 'benzina'){
+        return true
+    }
+})
+
+console.log(altreMacchine)
