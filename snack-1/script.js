@@ -68,3 +68,11 @@ const macchine = [
  }
 
 ];
+
+const macchineBenzina = macchine.filter ((alimentazione) => {
+    if(macchine.alimentazione === benzina){
+        return true
+    }
+})
+
+console.log(macchineBenzina)
