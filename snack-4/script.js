@@ -7,7 +7,13 @@ const numeri = [1,2,3];
 const lettere = ['a','b','c'];
 
 function mistoNumeriLettere() {
-    return numeri[i] += lettere[i]
+    const nuovoArray = []
+    nuovoArray.push(numeri[i] + lettere[i]);
+    return nuovoArray
 }
 
 console.log(mistoNumeriLettere)
+
+
+
+// NO ERRORE SBAGLIATO!!!!!
