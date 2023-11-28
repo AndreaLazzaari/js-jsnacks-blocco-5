@@ -13,8 +13,12 @@ const finestra = {
     "activeTab": 0
 }
 
-let tabSocial = finestra.tab.filter((tab) => {
-    if (activeTab === tab[i]) {
-        
+const blackList = ["facebook", 'youtube', 'twitch']
+
+finestra.tab = finestra.tab.filter((element) => {
+    if (!blackList.includes(element.toLocaleLowerCase())) {
+        return true
     }
 })
+
+console.log(finestra);
