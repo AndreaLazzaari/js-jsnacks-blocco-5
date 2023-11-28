@@ -13,3 +13,8 @@ const finestra = {
     "activeTab": 0
 }
 
+let tabSocial = finestra.tab.filter((tab) => {
+    if (activeTab === tab[i]) {
+        
+    }
+})
