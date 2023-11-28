@@ -37,5 +37,9 @@ const team = [
 ]
 
 const nuovoArray = team.map((punti, falli) => {
-    
+    punti = Math.floor(Math.random() * 150)
+    falli = Math.floor(Math.random * 100)
+
 })
+
+console.log(nuovoArray)
